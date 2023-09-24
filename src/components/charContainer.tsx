@@ -6,6 +6,10 @@ interface Props {
 export default function CharContainer({char, color}: Props) {
     return (
         <span
-            className={`font-semibold text-lg ` + color}>{char}</span>
+            className={
+                `font-roboto-mono font-bold text-lg ` 
+                + color
+            }
+        >{char}</span>
     )
 }

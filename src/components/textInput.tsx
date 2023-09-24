@@ -21,7 +21,7 @@ export default function TextInput({id, onChangeValue}: Props) {
         <div className="flex flex-row items-center justify-center px-5 m-0">
             <input
                 id={id}
-                className="w-full h-0 border-b border-b-gray-900 bg-transparent focus:outline-none"
+                className="w-full h-0 bg-transparent focus:outline-none"
                 onChange={(e) => handleChange(e)}
                 value={''}
             />

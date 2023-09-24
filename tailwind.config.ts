@@ -8,11 +8,15 @@ const config: Config = {
   ],
   theme: {
     extend: {
-      backgroundImage: {
-        'gradient-radial': 'radial-gradient(var(--tw-gradient-stops))',
-        'gradient-conic':
-          'conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))',
+      fontFamily: {
+        'roboto-mono': ['Roboto Mono', 'monospace'],
+        'montserrat': ['Montserrat', 'sans-serif'],
       },
+      backgroundColor: {
+        'main': '#1b334b',
+        'button': '#3598dc',
+        'time': 'rgba(168, 220, 255, 0.5)',
+      }
     },
   },
   plugins: [],
