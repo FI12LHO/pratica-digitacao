@@ -1,5 +1,6 @@
 interface Props {
     onChangeValue: (value: string) => void
+    id: string
 }
 
 interface InputProps {
@@ -9,7 +10,7 @@ interface InputProps {
     }
 }
 
-export default function TextInput({onChangeValue}: Props) {
+export default function TextInput({id, onChangeValue}: Props) {
     const handleChange = (elem: any) => {
         const input: InputProps = elem
         input.preventDefault()
@@ -17,9 +18,10 @@ export default function TextInput({onChangeValue}: Props) {
     }
 
     return (
-        <div className="flex flex-row items-center justify-center py-4">
+        <div className="flex flex-row items-center justify-center px-5 m-0">
             <input
-                className="w-80 h-16 mx-4 border border-stone-600 bg-white focus:outline-none"
+                id={id}
+                className="w-full h-0 border-b border-b-gray-900 bg-transparent focus:outline-none"
                 onChange={(e) => handleChange(e)}
                 value={''}
             />

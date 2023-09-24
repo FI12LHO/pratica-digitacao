@@ -1,11 +1,14 @@
 interface Props {
-    text: string
+    children: any
+    htmlFor: string
 }
 
-export default function Painel({text}: Props) {
+export default function Painel({ children, htmlFor }: Props) {
     return (
-        <div>
-            <p>{text}</p>
+        <div className="p-5 mb-0">
+            <label className="m-0" htmlFor={htmlFor}>
+                {children}
+            </label>
         </div>
     )
 }
